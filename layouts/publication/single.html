@@ -9,6 +9,9 @@
     {{ if .Params.abstract }}
     <h3>{{ i18n "abstract" }}</h3>
     <p class="pub-abstract" itemprop="text">{{ .Params.abstract | markdownify }}</p>
+    {{ else if .Params.abstract_extended }}
+    <h3>{{ i18n "abstract_extended" }}</h3>
+    <p class="pub-abstract" itemprop="text">{{ .Params.abstract_extended | markdownify }}</p>
     {{ end }}
 
     {{ if (.Params.publication_types) and (ne (index .Params.publication_types 0) "0") }}

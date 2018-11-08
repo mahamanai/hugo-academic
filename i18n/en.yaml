@@ -117,6 +117,9 @@
 - id: abstract
   translation: Abstract
 
+- id: abstract_extended
+  translation: Extended Abstract
+
 - id: publication
   translation: Publication
 
